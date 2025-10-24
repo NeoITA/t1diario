@@ -1,3 +1,7 @@
+import { joinURL } from 'ufo'
+
+const appBaseURL = process.env.NUXT_APP_BASE_URL || '/'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   runtimeConfig: {
@@ -24,7 +28,7 @@ export default defineNuxtConfig({
     // IMPORTANT: if you deploy to a project page like https://USERNAME.github.io/REPO_NAME/,
     // set NUXT_APP_BASE_URL to '/REPO_NAME/' in your GitHub Action (below).
     // If you deploy to a user/org page like https://USERNAME.github.io/ set it to '/'.
-    baseURL: process.env.NUXT_APP_BASE_URL || '/',
+    baseURL: appBaseURL,
     head: {
       title: 'T1Diario — Diari di vita con il diabete di tipo 1',
       meta: [
@@ -36,7 +40,7 @@ export default defineNuxtConfig({
         { name: 'twitter:card', content: 'summary' }
       ],
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: 'favicon.svg' }
+        { rel: 'icon', type: 'image/svg+xml', href: joinURL(appBaseURL, 'favicon.svg') }
       ]
     }
   },

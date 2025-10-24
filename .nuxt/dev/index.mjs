@@ -1083,7 +1083,7 @@ const _zLV2znfUfGXVDi_N5O5CpyHznFAforQaXuxqf_znQFE = (function(nitro) {
 
 const rootDir = "/Users/stefano/Progetti/t1diario";
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"Storie, strumenti e pensieri reali sulla vita con il diabete di tipo 1. Niente eroismi: esperimenti quotidiani e idee pratiche."},{"property":"og:title","content":"T1Diario"},{"property":"og:description","content":"Diari di vita con il diabete di tipo 1"},{"property":"og:type","content":"website"},{"property":"og:site_name","content":"T1Diario"},{"name":"twitter:card","content":"summary"}],"link":[{"rel":"icon","type":"image/svg+xml","href":"favicon.svg"}],"style":[],"script":[],"noscript":[],"title":"T1Diario — Diari di vita con il diabete di tipo 1"};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"Storie, strumenti e pensieri reali sulla vita con il diabete di tipo 1. Niente eroismi: esperimenti quotidiani e idee pratiche."},{"property":"og:title","content":"T1Diario"},{"property":"og:description","content":"Diari di vita con il diabete di tipo 1"},{"property":"og:type","content":"website"},{"property":"og:site_name","content":"T1Diario"},{"name":"twitter:card","content":"summary"}],"link":[{"rel":"icon","type":"image/svg+xml","href":"/favicon.svg"}],"style":[],"script":[],"noscript":[],"title":"T1Diario — Diari di vita con il diabete di tipo 1"};
 
 const appRootTag = "div";
 
