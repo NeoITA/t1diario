@@ -1,0 +1,1 @@
+import{_ as e,c as n,b as c,j as t,o as s}from"#entry";const r={},a={class:"prose prose-zinc max-w-none"};function _(p,i){const o=t("ContentDoc");return s(),n("article",a,[c(o,{path:"/chi-sono"})])}const m=e(r,[["render",_]]);export{m as default};

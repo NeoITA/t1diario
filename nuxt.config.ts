@@ -18,7 +18,7 @@ export default defineNuxtConfig({
         { name: 'twitter:card', content: 'summary' }
       ],
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
+        { rel: 'icon', type: 'image/svg+xml', href: 'favicon.svg' }
       ]
     }
   },
@@ -29,6 +29,7 @@ export default defineNuxtConfig({
     }
   },
   nitro: {
+    preset: 'github_pages',
     prerender: {
       crawlLinks: true,
       routes: ['/', '/blog'],
