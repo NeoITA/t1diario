@@ -642,7 +642,7 @@ function _expandFromEnv(value) {
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "e4c8f668-e8eb-4dc5-b4fc-fe0381245c69",
+    "buildId": "33d76061-45e8-4193-8c8d-8f8c50d27026",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -679,6 +679,20 @@ const _inlineRuntimeConfig = {
     }
   },
   "public": {
+    "giscus": {
+      "repo": "",
+      "repoId": "",
+      "category": "",
+      "categoryId": "",
+      "mapping": "pathname",
+      "strict": "0",
+      "reactions": "1",
+      "emitMetadata": "0",
+      "inputPosition": "bottom",
+      "theme": "light",
+      "lang": "it",
+      "loading": "lazy"
+    },
     "content": {
       "wsUrl": ""
     },
@@ -1124,7 +1138,7 @@ async function decompressSQLDump(base64Str, compressionType = "gzip") {
 }
 
 const checksums = {
-  "content": "v3.5.0--sSUcQW9ZQDZoUhg1-p3N_nJqCgUM2eeWlnp-Nd-oMkQ"
+  "content": "v3.5.0--_jgNM73Urf13dXB2ZTIPwtrQAGJEECLE6RCX_IJiYxU"
 };
 const checksumsStructure = {
   "content": "bgIYhpjRuV8zbHJE_CfelwKpJ_Td6YuGJwixiek8lmI"

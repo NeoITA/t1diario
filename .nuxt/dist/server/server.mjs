@@ -383,7 +383,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import("./_nuxt/index-IRasE_od.js")
+    component: () => import("./_nuxt/index-BYKT0Rkj.js")
   },
   {
     name: "chi-sono",
@@ -393,12 +393,12 @@ const _routes = [
   {
     name: "blog",
     path: "/blog",
-    component: () => import("./_nuxt/index-CrjDa2u9.js")
+    component: () => import("./_nuxt/index-By0dk5MU.js")
   },
   {
     name: "blog-slug",
     path: "/blog/:slug(.*)*",
-    component: () => import("./_nuxt/_...slug_-g3Cw_eHL.js")
+    component: () => import("./_nuxt/_...slug_-DrJt7e91.js")
   }
 ];
 const _wrapInTransition = (props, children) => {

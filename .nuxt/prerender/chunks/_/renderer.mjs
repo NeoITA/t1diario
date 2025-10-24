@@ -263,7 +263,7 @@ async function renderInlineStyles(usedModules) {
 
 const renderSSRHeadOptions = {"omitLineBreaks":false};
 
-const entryFileName = "BPEZmJjE.js";
+const entryFileName = "DYBbcDFO.js";
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;

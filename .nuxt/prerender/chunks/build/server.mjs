@@ -398,7 +398,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-IRasE_od.mjs')
+    component: () => import('./index-BYKT0Rkj.mjs')
   },
   {
     name: "chi-sono",
@@ -408,12 +408,12 @@ const _routes = [
   {
     name: "blog",
     path: "/blog",
-    component: () => import('./index-CrjDa2u9.mjs')
+    component: () => import('./index-By0dk5MU.mjs')
   },
   {
     name: "blog-slug",
     path: "/blog/:slug(.*)*",
-    component: () => import('./_...slug_-g3Cw_eHL.mjs')
+    component: () => import('./_...slug_-DrJt7e91.mjs')
   }
 ];
 const _wrapInTransition = (props, children) => {

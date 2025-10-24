@@ -1,1 +1,0 @@
-import{_ as o,c as n,b as c,j as s,o as t}from"#entry";const r={},_={class:"prose prose-zinc max-w-none prose-headings:scroll-mt-24"};function a(l,p){const e=s("ContentDoc");return t(),n("article",_,[c(e)])}const i=o(r,[["render",a]]);export{i as default};

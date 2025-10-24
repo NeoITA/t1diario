@@ -35,6 +35,18 @@ jobs:
         env:
           # For project pages (https://USERNAME.github.io/REPO/). Change to '/' for user/org pages.
           NUXT_APP_BASE_URL: ${{ format('/{0}/', github.event.repository.name) }}
+          NUXT_PUBLIC_GISCUS_REPO: ${{ secrets.NUXT_PUBLIC_GISCUS_REPO }}
+          NUXT_PUBLIC_GISCUS_REPO_ID: ${{ secrets.NUXT_PUBLIC_GISCUS_REPO_ID }}
+          NUXT_PUBLIC_GISCUS_CATEGORY: ${{ secrets.NUXT_PUBLIC_GISCUS_CATEGORY }}
+          NUXT_PUBLIC_GISCUS_CATEGORY_ID: ${{ secrets.NUXT_PUBLIC_GISCUS_CATEGORY_ID }}
+          NUXT_PUBLIC_GISCUS_MAPPING: ${{ secrets.NUXT_PUBLIC_GISCUS_MAPPING }}
+          NUXT_PUBLIC_GISCUS_STRICT: ${{ secrets.NUXT_PUBLIC_GISCUS_STRICT }}
+          NUXT_PUBLIC_GISCUS_REACTIONS: ${{ secrets.NUXT_PUBLIC_GISCUS_REACTIONS }}
+          NUXT_PUBLIC_GISCUS_EMIT_METADATA: ${{ secrets.NUXT_PUBLIC_GISCUS_EMIT_METADATA }}
+          NUXT_PUBLIC_GISCUS_INPUT_POSITION: ${{ secrets.NUXT_PUBLIC_GISCUS_INPUT_POSITION }}
+          NUXT_PUBLIC_GISCUS_THEME: ${{ secrets.NUXT_PUBLIC_GISCUS_THEME }}
+          NUXT_PUBLIC_GISCUS_LANG: ${{ secrets.NUXT_PUBLIC_GISCUS_LANG }}
+          NUXT_PUBLIC_GISCUS_LOADING: ${{ secrets.NUXT_PUBLIC_GISCUS_LOADING }}
         run: npm run generate
 
       - name: Upload artifact

@@ -152,6 +152,32 @@ declare module 'nuxt/schema' {
    },
   }
   interface PublicRuntimeConfig {
+   giscus: {
+      repo: string,
+
+      repoId: string,
+
+      category: string,
+
+      categoryId: string,
+
+      mapping: string,
+
+      strict: string,
+
+      reactions: string,
+
+      emitMetadata: string,
+
+      inputPosition: string,
+
+      theme: string,
+
+      lang: string,
+
+      loading: string,
+   },
+
    content: {
       wsUrl: string,
    },

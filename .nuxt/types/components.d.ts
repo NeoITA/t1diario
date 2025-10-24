@@ -14,6 +14,7 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 interface _GlobalComponents {
+  'GiscusComments': typeof import("../../components/GiscusComments.vue")['default']
   'HeaderNav': typeof import("../../components/HeaderNav.vue")['default']
   'NewsletterCta': typeof import("../../components/NewsletterCta.vue")['default']
   'PostCard': typeof import("../../components/PostCard.vue")['default']
@@ -71,6 +72,7 @@ interface _GlobalComponents {
   'Html': typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Html']
   'Body': typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Body']
   'NuxtIsland': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island")['default']
+  'LazyGiscusComments': LazyComponent<typeof import("../../components/GiscusComments.vue")['default']>
   'LazyHeaderNav': LazyComponent<typeof import("../../components/HeaderNav.vue")['default']>
   'LazyNewsletterCta': LazyComponent<typeof import("../../components/NewsletterCta.vue")['default']>
   'LazyPostCard': LazyComponent<typeof import("../../components/PostCard.vue")['default']>

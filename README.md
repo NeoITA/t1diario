@@ -35,6 +35,21 @@ Apri http://localhost:3000
 
 > Nota: la Action carica la cartella `.output/public` generata da `npm run generate`.
 
+## Commenti con Giscus
+1. Configura l'app su [giscus.app](https://giscus.app) scegliendo il repository GitHub e la categoria di discussioni dove salvare i commenti.
+2. Copia i valori mostrati (repository, repo ID, category, category ID, ecc.).
+3. Aggiungi un file `.env` locale (ignorato da git) con:
+   ```
+   NUXT_PUBLIC_GISCUS_REPO=owner/repo
+   NUXT_PUBLIC_GISCUS_REPO_ID=...
+   NUXT_PUBLIC_GISCUS_CATEGORY=Announcements
+   NUXT_PUBLIC_GISCUS_CATEGORY_ID=...
+   ```
+   (opzionalmente imposta anche `NUXT_PUBLIC_GISCUS_THEME`, `..._LANG`, ecc.).
+4. Nella GitHub Action imposta le stesse variabili come `env`/`secrets` per avere i commenti anche in produzione.
+
+Le impostazioni caricate in `nuxt.config.ts` attivano automaticamente il componente `GiscusComments` in fondo ai post del blog.
+
 ## Scrittura di un nuovo post
 Crea un file in `content/blog/slug-del-post.md` con frontmatter:
 ```md

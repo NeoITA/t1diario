@@ -659,6 +659,20 @@ const _inlineRuntimeConfig = {
     }
   },
   "public": {
+    "giscus": {
+      "repo": "",
+      "repoId": "",
+      "category": "",
+      "categoryId": "",
+      "mapping": "pathname",
+      "strict": "0",
+      "reactions": "1",
+      "emitMetadata": "0",
+      "inputPosition": "bottom",
+      "theme": "light",
+      "lang": "it",
+      "loading": "lazy"
+    },
     "content": {
       "wsUrl": "ws://localhost:4000/"
     },
@@ -1596,7 +1610,7 @@ async function decompressSQLDump(base64Str, compressionType = "gzip") {
 }
 
 const checksums = {
-  "content": "v3.5.0--sSUcQW9ZQDZoUhg1-p3N_nJqCgUM2eeWlnp-Nd-oMkQ"
+  "content": "v3.5.0--_jgNM73Urf13dXB2ZTIPwtrQAGJEECLE6RCX_IJiYxU"
 };
 const checksumsStructure = {
   "content": "bgIYhpjRuV8zbHJE_CfelwKpJ_Td6YuGJwixiek8lmI"

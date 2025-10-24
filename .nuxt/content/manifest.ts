@@ -1,5 +1,5 @@
 export const checksums = {
-  "content": "v3.5.0--sSUcQW9ZQDZoUhg1-p3N_nJqCgUM2eeWlnp-Nd-oMkQ"
+  "content": "v3.5.0--_jgNM73Urf13dXB2ZTIPwtrQAGJEECLE6RCX_IJiYxU"
 }
 export const checksumsStructure = {
   "content": "bgIYhpjRuV8zbHJE_CfelwKpJ_Td6YuGJwixiek8lmI"
