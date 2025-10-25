@@ -14,7 +14,7 @@ const orderedPosts = ref([
     _path: '/blog/benvenuto-su-t1diario',
     title: 'Benvenutə su T1Diario',
     description: 'Cosa aspettarti: diario di vita tra lavoro, impegni, sport, amici e la convivenza quotidiana con il diabete di tipo 1.',
-    date: '2025-10-23',
+    date: '2025-10-24',
     tags: ['manifesto', 'benvenuto', 'mindset']
   }
 ])
