@@ -4,6 +4,14 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'content/**'
+      - 'pages/**'
+      - 'components/**'
+      - 'app.vue'
+      - 'nuxt.config.ts'
+      - 'package.json'
+      - 'package-lock.json'
   workflow_dispatch:
 
 permissions:
