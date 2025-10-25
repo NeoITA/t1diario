@@ -1,24 +1,23 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 
-const FEATURED_POST_PATH = '/blog/diagnosi-10-righe'
-
-const { data: orderedPosts } = await useAsyncData('blog-list', async () => {
-  const [featured, list] = await Promise.all([
-    queryContent()
-      .where({ _path: FEATURED_POST_PATH })
-      .findOne(),
-    queryContent('/blog')
-      .sort({ date: -1 })
-      .find()
-  ])
-
-  if (!featured) {
-    return list
+// Dati statici degli articoli per ora (ordinati per data decrescente)
+const orderedPosts = ref([
+  {
+    _path: '/blog/diagnosi-10-righe',
+    title: 'La diagnosi in 10 righe (più una)',
+    description: 'Cronaca sintetica, cosa avrei voluto sapere, takeaway pratici.',
+    date: '2024-10-25',
+    tags: ['diagnosi', 'diario']
+  },
+  {
+    _path: '/blog/benvenuto-su-t1diario',
+    title: 'Benvenutə su T1Diario',
+    description: 'Cosa aspettarti: diario di vita tra lavoro, impegni, sport, amici e la convivenza quotidiana con il diabete di tipo 1.',
+    date: '2025-10-23',
+    tags: ['manifesto', 'benvenuto', 'mindset']
   }
-
-  const others = list.filter((item) => item?._path !== featured._path)
-  return [featured, ...others]
-})
+])
 </script>
 
 <template>

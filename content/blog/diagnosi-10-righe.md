@@ -1,7 +1,7 @@
 ---
 title: La diagnosi in 10 righe (più una)
 description: Cronaca sintetica, cosa avrei voluto sapere, takeaway pratici.
-date: 2025-10-24
+date: 2024-10-25
 tags: [diagnosi, diario]
 ---
 
