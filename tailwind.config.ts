@@ -1,4 +1,16 @@
 import type { Config } from 'tailwindcss'
+
+const palette = {
+  espresso: '#2B1F18',
+  moka: '#4C3428',
+  crema: '#F8F2E6',
+  sabbia: '#E4D4C3',
+  teak: '#CDA47A',
+  salvia: '#7FA6A0',
+  ambra: '#D8743C',
+  fumo: '#A48F80'
+}
+
 export default <Partial<Config>>{
   content: [
     './components/**/*.{vue,js,ts}',
@@ -10,11 +22,7 @@ export default <Partial<Config>>{
   theme: {
     extend: {
       colors: {
-        ink: '#1F2937',
-        panna: '#FAFAF9',
-        aqua: '#5FD1C3',
-        lavanda: '#C7C5F4',
-        graywarm: '#E5E7EB'
+        ...palette
       },
       borderRadius: {
         '2xl': '1rem'

@@ -6,6 +6,7 @@ const appBaseURL = process.env.NUXT_APP_BASE_URL || '/'
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
+      contactEmail: process.env.NUXT_PUBLIC_CONTACT_EMAIL || 'ciao@t1diario.it',
       giscus: {
         repo: process.env.NUXT_PUBLIC_GISCUS_REPO || '',
         repoId: process.env.NUXT_PUBLIC_GISCUS_REPO_ID || '',
@@ -40,7 +41,7 @@ export default defineNuxtConfig({
         { name: 'twitter:card', content: 'summary' }
       ],
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: joinURL(appBaseURL, 'favicon.svg') }
+        { rel: 'icon', type: 'image/png', href: joinURL(appBaseURL, 't1diario-favicon-512.png') }
       ]
     }
   },
@@ -54,7 +55,7 @@ export default defineNuxtConfig({
     preset: 'github_pages',
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/blog'],
+      routes: ['/', '/blog', '/contatti', '/chi-sono'],
       failOnError: false
     }
   },

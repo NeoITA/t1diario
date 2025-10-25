@@ -152,6 +152,8 @@ declare module 'nuxt/schema' {
    },
   }
   interface PublicRuntimeConfig {
+   contactEmail: string,
+
    giscus: {
       repo: string,
 

@@ -6,6 +6,7 @@
 </template>
 
 <script setup lang="ts">
+import { useRuntimeConfig } from 'nuxt/app'
 import { computed } from 'vue'
 
 const giscusEnabled = computed(() => {
