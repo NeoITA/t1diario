@@ -107,8 +107,6 @@ const formatDate = (value?: string) => {
   }
   return new Date(value).toLocaleDateString('it-IT', { day: '2-digit', month: 'short', year: 'numeric' })
 }
-
-const highlightedPosts = computed(() => posts.value?.slice(0, 3) || [])
 </script>
 
 <template>
