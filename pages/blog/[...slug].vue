@@ -46,6 +46,7 @@ const giscusEnabled = computed(() => {
       <ContentRenderer :value="doc" />
     </article>
 
+    <!-- Sezione commenti -->
     <GiscusComments v-if="giscusEnabled" />
   </div>
 

@@ -6,7 +6,7 @@ const appBaseURL = process.env.NUXT_APP_BASE_URL || '/'
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      contactEmail: process.env.NUXT_PUBLIC_CONTACT_EMAIL || 'ciao@t1diario.it',
+      contactEmail: process.env.NUXT_PUBLIC_CONTACT_EMAIL || 'ciao.t1diario@gmail.com',
       giscus: {
         repo: process.env.NUXT_PUBLIC_GISCUS_REPO || '',
         repoId: process.env.NUXT_PUBLIC_GISCUS_REPO_ID || '',

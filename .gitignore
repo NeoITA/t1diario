@@ -1,1 +1,10 @@
 node_modules
+
+# Env files
+.env
+.env.local
+
+# Nuxt build
+.nuxt
+.output
+dist

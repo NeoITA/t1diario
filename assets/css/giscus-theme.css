@@ -1,0 +1,119 @@
+/* Tema personalizzato per Giscus - T1Diario */
+
+.giscus,
+.giscus-frame {
+  width: 100%;
+}
+
+.giscus-frame {
+  border: none;
+  color-scheme: light;
+}
+
+/* Stili per il container principale */
+:root {
+  --color-espresso: #3e2723;
+  --color-crema: #faf8f3;
+  --color-sabbia: #d7ccc8;
+  --color-salvia: #7cb342;
+  --color-ambra: #ffa726;
+  --color-moka: #6d4c41;
+  --color-fumo: #78909c;
+}
+
+/* Override dei colori di Giscus per adattarli al tema del blog */
+.giscus-comment-container {
+  background-color: var(--color-crema) !important;
+  border-radius: 1.5rem !important;
+  border: 1px solid var(--color-sabbia) !important;
+  margin-bottom: 1rem !important;
+}
+
+.giscus-comment {
+  background-color: var(--color-crema) !important;
+  color: var(--color-espresso) !important;
+}
+
+.giscus-comment-header {
+  color: var(--color-moka) !important;
+}
+
+.giscus-comment-author {
+  color: var(--color-espresso) !important;
+  font-weight: 600 !important;
+}
+
+.giscus-comment-content {
+  color: var(--color-espresso) !important;
+  line-height: 1.6 !important;
+}
+
+/* Form di risposta */
+.giscus-comment-box,
+.giscus-comment-box-main {
+  background-color: var(--color-crema) !important;
+  border: 1px solid var(--color-sabbia) !important;
+  border-radius: 1rem !important;
+}
+
+.giscus-comment-box-textarea {
+  background-color: white !important;
+  border: 1px solid var(--color-sabbia) !important;
+  border-radius: 1rem !important;
+  color: var(--color-espresso) !important;
+}
+
+.giscus-comment-box-textarea:focus {
+  border-color: var(--color-salvia) !important;
+  outline: none !important;
+}
+
+/* Pulsanti */
+.giscus-comment-box-button,
+button[type="submit"] {
+  background-color: var(--color-salvia) !important;
+  color: white !important;
+  border-radius: 1rem !important;
+  font-weight: 600 !important;
+  padding: 0.625rem 1rem !important;
+  transition: background-color 0.2s !important;
+}
+
+.giscus-comment-box-button:hover,
+button[type="submit"]:hover {
+  background-color: #689f38 !important;
+}
+
+/* Reazioni */
+.giscus-reaction-button {
+  border-radius: 0.75rem !important;
+  border: 1px solid var(--color-sabbia) !important;
+}
+
+.giscus-reaction-button:hover {
+  background-color: var(--color-crema) !important;
+  border-color: var(--color-salvia) !important;
+}
+
+/* Link */
+a.giscus-link,
+.giscus-comment a {
+  color: var(--color-salvia) !important;
+}
+
+a.giscus-link:hover,
+.giscus-comment a:hover {
+  text-decoration: underline !important;
+}
+
+/* Thread/Risposte */
+.giscus-reply {
+  border-left: 2px solid var(--color-sabbia) !important;
+  margin-left: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+/* Loading skeleton */
+.giscus-loading-skeleton {
+  background-color: var(--color-sabbia) !important;
+}
