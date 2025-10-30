@@ -39,6 +39,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Debug environment variables
+        run: |
+          echo "NUXT_PUBLIC_GISCUS_REPO is set: ${{ secrets.NUXT_PUBLIC_GISCUS_REPO != '' }}"
+          echo "NUXT_PUBLIC_GISCUS_REPO_ID is set: ${{ secrets.NUXT_PUBLIC_GISCUS_REPO_ID != '' }}"
+          echo "NUXT_PUBLIC_CONTACT_EMAIL is set: ${{ secrets.NUXT_PUBLIC_CONTACT_EMAIL != '' }}"
+
       - name: Generate static site
         env:
           # For project pages (https://USERNAME.github.io/REPO/). Change to '/' for user/org pages.
