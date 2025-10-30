@@ -1,25 +1,25 @@
 <template>
-  <ClientOnly>
-    <section
-      v-if="isConfigured"
-      class="mt-12 space-y-6"
-      aria-labelledby="comments-title"
-    >
-      <!-- Header sezione commenti -->
-      <div class="flex items-center gap-3">
-        <div class="h-px flex-1 bg-sabbia"></div>
-        <h2 id="comments-title" class="text-2xl font-bold text-espresso">
-          Commenti
-        </h2>
-        <div class="h-px flex-1 bg-sabbia"></div>
-      </div>
+  <section
+    v-if="isConfigured"
+    class="mt-12 space-y-6"
+    aria-labelledby="comments-title"
+  >
+    <!-- Header sezione commenti -->
+    <div class="flex items-center gap-3">
+      <div class="h-px flex-1 bg-sabbia"></div>
+      <h2 id="comments-title" class="text-2xl font-bold text-espresso">
+        Commenti
+      </h2>
+      <div class="h-px flex-1 bg-sabbia"></div>
+    </div>
 
-      <!-- Container Giscus -->
-      <div class="rounded-3xl border border-sabbia bg-crema/80 p-6 shadow-sm">
+    <!-- Container Giscus -->
+    <div class="rounded-3xl border border-sabbia bg-crema/80 p-6 shadow-sm">
+      <ClientOnly>
         <div ref="container" />
-      </div>
-    </section>
-  </ClientOnly>
+      </ClientOnly>
+    </div>
+  </section>
 </template>
 
 <script setup lang="ts">
