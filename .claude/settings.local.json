@@ -10,7 +10,10 @@
       "Read(//Users/stefano/Desktop/**)",
       "Bash(gh run:*)",
       "WebFetch(domain:github.com)",
-      "WebFetch(domain:neoita.github.io)"
+      "WebFetch(domain:neoita.github.io)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
