@@ -12,3 +12,4 @@ Ciao! Sono **Stefano** e convivo con il diabete di tipo 1 dal 2019. Qui racconto
 
 Se quello che leggi ti Ã¨ utile, fammelo sapere: i commenti gentili sono sempre benvenuti.
  
+
