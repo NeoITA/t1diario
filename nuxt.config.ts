@@ -64,4 +64,3 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2024-11-01'
 })
-# Updated Thu Oct 30 10:37:30 CET 2025
