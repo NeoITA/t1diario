@@ -43,6 +43,7 @@ jobs:
         env:
           # For project pages (https://USERNAME.github.io/REPO/). Change to '/' for user/org pages.
           NUXT_APP_BASE_URL: ${{ format('/{0}/', github.event.repository.name) }}
+          NUXT_PUBLIC_CONTACT_EMAIL: ${{ secrets.NUXT_PUBLIC_CONTACT_EMAIL }}
           NUXT_PUBLIC_GISCUS_REPO: ${{ secrets.NUXT_PUBLIC_GISCUS_REPO }}
           NUXT_PUBLIC_GISCUS_REPO_ID: ${{ secrets.NUXT_PUBLIC_GISCUS_REPO_ID }}
           NUXT_PUBLIC_GISCUS_CATEGORY: ${{ secrets.NUXT_PUBLIC_GISCUS_CATEGORY }}
